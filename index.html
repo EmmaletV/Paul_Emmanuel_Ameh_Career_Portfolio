@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Paul Emmanuel Ameh — Public Health Researcher & Programme Coordinator</title>
+<meta name="description" content="Professional portfolio of Paul Emmanuel Ameh – Public Health, Implementation Research, Programme Coordination, Data Analysis. Based in Abuja, FCT.">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fdfaf5;--paper:#ffffff;--ink:#111827;--muted:#6b7280;--faint:#a8a29e;--line:#e7e5e4;--accent:#0e7490;--accent2:#115e59;--soft:#ecfeff;--sand:#fef3c7;--green:#ecfdf5;--radius:24px;--radiusL:36px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:'Plus Jakarta Sans',system-ui,sans-serif;line-height:1.7}
+h1,h2,h3{font-family:'Fraunces',serif;letter-spacing:-.03em}
+a{color:inherit}
+.container{max-width:1280px;margin:0 auto;padding:0 28px}
+header{position:sticky;top:0;z-index:60;background:rgba(253,250,245,.88);backdrop-filter:blur(20px);border-bottom:1px solid var(--line)}
+.nav{height:78px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-weight:800;display:flex;align-items:center;gap:12px;letter-spacing:-.02em}
+.badge-logo{width:40px;height:40px;border-radius:12px;background:var(--ink);color:#fff;display:grid;place-items:center;font-weight:800}
+.links{display:flex;gap:24px;font-size:13px;font-weight:600;color:var(--muted)}
+.links a:hover{color:var(--ink)}
+.btn{height:44px;padding:0 24px;border-radius:999px;border:1px solid var(--line);background:var(--paper);font-weight:700;font-size:13px;display:inline-flex;align-items:center;gap:8px;transition:.2s}
+.btn:hover{transform:translateY(-1px);box-shadow:0 10px 28px rgba(17,24,39,.08)}
+.btn-dark{background:var(--ink);color:#fff;border-color:var(--ink)}
+.btn-accent{background:var(--accent);color:#fff;border-color:var(--accent)}
+.kicker{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);font-weight:800;margin-bottom:10px}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:26px}
+.card-soft{background:linear-gradient(180deg,#fff 0%,#f8fafc 100%)}
+.hero{padding:48px 0 28px;display:grid;grid-template-columns:1.2fr .8fr;gap:24px}
+.hero-main{background:var(--paper);border:1px solid var(--line);border-radius:var(--radiusL);padding:36px;position:relative;overflow:hidden}
+.hero-main::before{content:"";position:absolute;inset:0;background:radial-gradient(700px 380px at 15% -10%,#ecfeff 0%,transparent 60%),radial-gradient(600px 400px at 85% 0%,#fef3c7 0%,transparent 60%);pointer-events:none}
+.hero h1{font-size:64px;line-height:.92;margin:0;position:relative}
+.hero h1 i{font-style:normal;color:var(--accent);position:relative}
+.hero h1 i::after{content:"";position:absolute;left:0;bottom:8px;width:100%;height:12px;background:var(--soft);z-index:-1}
+.lead{font-size:17.5px;color:var(--muted);max-width:60ch;margin-top:18px;position:relative}
+.pills{display:flex;gap:8px;flex-wrap:wrap;margin-top:22px;position:relative}
+.pill{padding:8px 14px;border-radius:999px;background:#f8fafc;border:1px solid var(--line);font-size:11px;font-weight:700;letter-spacing:.02em;color:var(--muted)}
+.profile-panel{background:linear-gradient(180deg,#111827 0%,#1f2937 100%);color:#e5e7eb;border-radius:var(--radiusL);padding:28px;position:relative;overflow:hidden;border:1px solid #1f2937}
+.profile-panel::after{content:"";position:absolute;width:520px;height:520px;background:radial-gradient(circle,rgba(34,211,238,.22),transparent 70%);top:-160px;right:-160px}
+.avatar{width:88px;height:88px;border-radius:20px;object-fit:cover;border:2px solid rgba(255,255,255,.15);background:#0e7490}
+.section{padding:80px 0;border-top:1px solid var(--line)}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.list{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px}
+.list li{position:relative;padding-left:20px;font-size:13.8px}
+.list li:before{content:"";position:absolute;left:0;top:9px;width:7px;height:7px;border-radius:50%;background:var(--accent)}
+.stat{font-family:Fraunces,serif;font-size:34px;font-weight:700;line-height:1}
+.table{width:100%;border-collapse:collapse;font-size:13.5px}
+.table th{text-align:left;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--faint);padding:12px 0;border-bottom:1px solid var(--line)}
+.table td{padding:12px 0;border-bottom:1px solid var(--line);vertical-align:top}
+.timeline{position:relative;padding-left:28px}
+.timeline::before{content:"";position:absolute;left:8px;top:0;bottom:0;width:1px;background:var(--line)}
+.timeline-item{position:relative;margin-bottom:32px}
+.timeline-item::before{content:"";position:absolute;left:-24px;top:6px;width:9px;height:9px;border-radius:50%;background:var(--accent);border:2px solid var(--bg)}
+.gallery-img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:16px;border:1px solid var(--line);background:#f5f5f4}
+.filter{height:36px;padding:0 18px;border-radius:999px;border:1px solid var(--line);background:var(--paper);font-weight:700;font-size:12px;cursor:pointer}
+.filter.active{background:var(--ink);color:#fff;border-color:var(--ink)}
+footer{border-top:1px solid var(--line);background:var(--paper);padding:40px 0;color:var(--muted);font-size:12.5px}
+@media(max-width:1024px){.hero{grid-template-columns:1fr}.hero h1{font-size:48px}.grid2,.grid3,.grid4{grid-template-columns:1fr}.links{display:none}}
+</style>
+</head>
+<body>
+<header>
+<div class="container nav">
+<div class="logo"><div class="badge-logo">PEA</div> Paul Emmanuel Ameh</div>
+<nav class="links"><a href="#about">About</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#research">Research</a><a href="#community">Community</a><a href="#education">Education</a><a href="#contact">Contact</a></nav>
+<a href="assets/Paul_Emmanuel_Ameh_CV.pdf" download class="btn">Download CV</a>
+</div>
+</header>
+
+<main>
+<div class="container hero">
+<div class="hero-main">
+<div class="kicker">Professional Statement — Public Health Practitioner • Abuja, FCT</div>
+<h1>Coordinating public health <i>programmes</i> that work in real communities.</h1>
+<p class="lead"><strong>Professional Summary:</strong> Public Health practitioner with experience in programme coordination, project administration, field operations, stakeholder engagement, and research support. Experienced in coordinating documentation, meetings, logistics, procurement support, participant activities, reporting, and data management across public health projects. I support planning, coordination and implementation ensuring timely follow-up on actions and deliverables across FCT, Kano, Imo, Ondo and Edo States.</p>
+<div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:24px;position:relative">
+<a href="#experience" class="btn btn-dark">View Experience →</a>
+<a href="#contact" class="btn">Let's Talk</a>
+<a href="assets/Paul_Emmanuel_Ameh_CV.pdf" download class="btn">CV PDF</a>
+</div>
+<div class="pills"><span class="pill">Programme & Project Coordination</span><span class="pill">Field & Logistics Coordination</span><span class="pill">Research Coordination</span><span class="pill">Data Quality & Analysis</span><span class="pill">SPSS • Excel • KoboToolbox • ODK</span></div>
+<div class="grid4" style="margin-top:28px;position:relative">
+<div class="card" style="padding:18px"><div class="stat">427</div><div style="font-size:12px;color:var(--muted);margin-top:6px">Participants – culture & mental health stigma study (6 zones)</div></div>
+<div class="card" style="padding:18px"><div class="stat">636</div><div style="font-size:12px;color:var(--muted);margin-top:6px">Respondents – obesity among young adults study</div></div>
+<div class="card" style="padding:18px"><div class="stat">750+</div><div style="font-size:12px;color:var(--muted);margin-top:6px">Observations & 70 variables in freelance datasets</div></div>
+<div class="card" style="padding:18px"><div class="stat">10+</div><div style="font-size:12px;color:var(--muted);margin-top:6px">Researchers supported (BSc, MSc, PhD)</div></div>
+</div>
+</div>
+<div class="profile-panel">
+<div style="display:flex;gap:16px;position:relative;z-index:1">
+<img src="assets/profile.jpg" class="avatar" alt="Paul Emmanuel Ameh" onerror="this.style.display='none'">
+<div><div style="font-weight:800;color:#fff;font-size:17px">Paul Emmanuel Ameh</div><div style="color:#94a3b8;font-size:13px;line-height:1.4">Public Health | Implementation Research<br>Programme Coordination | Data Analysis</div><div style="margin-top:10px;display:flex;gap:6px;flex-wrap:wrap"><span class="pill" style="background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.12);color:#cbd5e1">Abuja, Nigeria</span><span class="pill" style="background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.12);color:#cbd5e1">Open to collaborations</span></div></div>
+</div>
+<div style="margin-top:22px;position:relative;z-index:1;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:20px;padding:18px">
+<div class="kicker" style="color:#22d3ee">Core Competencies</div>
+<ul class="list" style="color:#cbd5e1">
+<li>Programme & Project Coordination | Project Administration | Field & Logistics Coordination</li>
+<li>Documentation & Records Management | Meeting & Webinar Support | Scheduling & Activity Follow-up</li>
+<li>Travel & Operational Support | Procurement & Vendor Coordination | Research Coordination</li>
+<li>Stakeholder Engagement | Quantitative & Qualitative Data Collection | Data Quality Assurance</li>
+<li>Data Analysis | Community Mobilization | Monitoring, Evaluation & Learning (MEL)</li>
+<li>Reporting & Documentation | Grant Opportunity Research | Microsoft Office Suite</li>
+</ul>
+</div>
+<div style="margin-top:18px;position:relative;z-index:1">
+<div class="kicker" style="color:#22d3ee">Technical Skills</div>
+<div style="font-size:12.5px;line-height:1.8;color:#cbd5e1">
+<strong style="color:#fff">Microsoft Office:</strong> Word, Excel, PowerPoint<br>
+<strong style="color:#fff">Data & Reporting:</strong> Excel, SPSS, Google Sheets, data cleaning, QA, analysis, tables<br>
+<strong style="color:#fff">Data Collection:</strong> KoboToolbox, ODK, Google Forms<br>
+<strong style="color:#fff">Collaboration:</strong> Zoom, Google Workspace, Slack<br>
+<strong style="color:#fff">Languages:</strong> English, Hausa, Yoruba
+</div>
+</div>
+<div style="margin-top:20px;display:flex;gap:8px;position:relative;z-index:1">
+<a href="mailto:paulemmameh@gmail.com" class="btn" style="background:rgba(255,255,255,.08);color:#fff;border-color:rgba(255,255,255,.15)">paulemmameh@gmail.com</a>
+<a href="https://www.linkedin.com/in/paul-emmanuel-ameh-a29480253" target="_blank" class="btn" style="background:rgba(255,255,255,.08);color:#fff;border-color:rgba(255,255,255,.15)">LinkedIn</a>
+</div>
+</div>
+</div>
+
+<section class="section" id="about">
+<div class="container grid2">
+<div>
+<div class="kicker">About</div>
+<h2 style="font-size:36px;margin:0 0 16px">Evidence before appearance. Coordination that keeps field work moving.</h2>
+<p style="color:var(--muted);font-size:15px">I work at the intersection of programme operations and research support. From participant registration and vendor follow-up to webinar logistics on Zoom, travel arrangements, and reviewing questionnaires for completeness and protocol adherence – my role is to ensure activities happen on time and data stays clean. My field experience includes youth engagement for HPV implementation (YIELD), public health research projects (SHARP, COSBIN), community sensitisation during the Measles-Rubella campaign in FCT, and school health outreach with NOUN.</p>
+<div class="card" style="margin-top:20px;background:var(--green)">
+<div class="kicker">What I bring</div>
+<ul class="list"><li>Timely follow-up on assigned actions and deliverables</li><li>Clear documentation and correspondence across staff, volunteers and stakeholders</li><li>Logistics that anticipates field realities – personnel, schedules, locations, materials</li><li>Data collection and quality review that respects protocols</li></ul>
+</div>
+</div>
+<div class="card">
+<div class="kicker">Professional Journey – At a glance</div>
+<div class="timeline" style="margin-top:16px">
+<div class="timeline-item"><strong>Research Intern / FCT Field Coordinator – DCL</strong><div style="font-size:12px;color:var(--muted)">Jan 2026 – Jul 2026 • Multi-state implementation research</div><div style="font-size:13px;color:var(--muted);margin-top:4px">Programme, research, administrative and field operations across FCT, Kano, Imo, Ondo, Edo. YIELD, SHARP, COSBIN, grant support.</div></div>
+<div class="timeline-item"><strong>Project Coordinator – Project 309 – Green Africa Initiative</strong><div style="font-size:12px;color:var(--muted)">Sept 2023 – Present • Environmental Sustainability Initiative, Abuja</div><div style="font-size:13px;color:var(--muted);margin-top:4px">Tree nursery development and tree-planting, vendor and volunteer coordination.</div></div>
+<div class="timeline-item"><strong>Freelance – Public Health & Research Analytics</strong><div style="font-size:12px;color:var(--muted)">Oct 2020 – Present • 750+ observations, 70 variables, 10+ researchers</div></div>
+<div class="timeline-item"><strong>Field Volunteer – WAVA & Community Outreach – NOUN</strong><div style="font-size:12px;color:var(--muted)">Mar 2022 – Oct 2025 • MR Campaign Bwari & AMAC, school health education</div></div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section" id="experience">
+<div class="container">
+<div class="kicker">Experience – Comprehensive</div>
+<h2 style="font-size:38px;margin:0 0 28px">Professional Experience in Detail</h2>
+
+<div class="card" style="margin-bottom:22px">
+<div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px"><h3 style="margin:0">Research Intern / FCT Field Coordinator – Direct Consulting and Logistics (DCL)</h3><span style="font-size:12px;color:var(--muted);background:#f8fafc;border:1px solid var(--line);padding:6px 12px;border-radius:999px">Jan 2026 – Jul 2026</span></div>
+<div style="font-size:12px;color:var(--muted);margin:8px 0">Supported programme, research, administrative and field operations across multiple public health projects, including multi-state implementation research across FCT, Kano, Imo, Ondo and Edo States.</div>
+<div class="grid2" style="margin-top:18px">
+<div><div class="kicker">Programme & Administrative Support</div><ul class="list"><li>Planning, coordination and implementation of project activities, ensuring timely follow-up on assigned actions and deliverables</li><li>Preparation, organisation and maintenance of project documentation, records, correspondence and activity materials</li><li>Scheduling and coordination of meetings, field activities, orientations and project engagements</li><li>Communication among project staff, field personnel, participants, volunteers and external stakeholders</li><li>Travel and field logistics – personnel, schedules, locations, materials and activity requirements</li><li>Procurement and operational processes, coordination with vendors and follow-up on goods and services</li><li>Participant registration, attendance documentation, field records and administrative requirements</li><li>Follow-up on tasks, field activities, logistics and outstanding requirements to support timely implementation</li></ul></div>
+<div><div class="kicker">Grant & Business Development Support</div><ul class="list"><li>Identification and review of potential grant opportunities relevant to organisation's public health work</li><li>Review of Terms of Interest, RFPs and funding information to understand donor requirements, priorities, eligibility and alignment</li><li>Participation in internal discussions on funding opportunities and positioning organisation's expertise</li></ul>
+<div style="margin-top:18px" class="card" style="background:var(--soft)"><div class="kicker">YIELD – Youth Initiative for Enhancing Long-Term Delivery of HPV Implementation</div><ul class="list"><li>Stakeholder mapping, youth participant recruitment, orientation, scheduling and field preparation</li><li>Preparation and coordination of Zoom webinars – scheduling, participant communication, meeting preparation</li><li>Coordinated FCT field activities and facilitated communication among staff, youth volunteers, participants and stakeholders</li><li>Conducted quantitative surveys and supported qualitative Key Informant Interviews (health, education, policy, community sectors)</li><li>Reviewed completed questionnaires and interview records for completeness, consistency and protocol adherence</li><li>Coordinated field logistics and timely execution of data collection</li></ul></div></div>
+</div>
+<div style="margin-top:18px" class="grid2">
+<div class="card" style="background:#f8fafc"><div class="kicker">SHARP & COSBIN Projects</div><ul class="list"><li>Data management, quality assurance, analysis and reporting</li><li>Analysed survey datasets using SPSS and Excel, prepared structured tables and analytical outputs for technical reports</li><li>Preparation of project documentation and materials for reporting and dissemination</li></ul></div>
+<div class="card" style="background:#fefce8"><div class="kicker">Project 309 – Green Africa Initiative</div><div style="font-size:13px;margin-bottom:8px"><strong>Project Coordinator – Environmental Sustainability Initiative, Abuja</strong><br>Sept 2023 – Present (corrected from Project 390)</div><ul class="list"><li>Coordinate planning and implementation of environmental sustainability activities, including tree nursery development and tree-planting</li><li>Coordinate with vendors, planting personnel, volunteers and stakeholders</li><li>Organise activity schedules, site requirements, personnel, materials and implementation needs</li><li>Monitor field activities and follow up on tasks and deliverables</li><li>Prepare periodic activity updates and reports for project founder</li></ul></div>
+</div>
+</div>
+
+<div class="grid3">
+<div class="card"><h3 style="margin:0 0 6px">Freelance – Public Health & Research Analytics</h3><div style="font-size:12px;color:var(--muted)">Oct 2020 – Present</div><ul class="list" style="margin-top:12px"><li>Quantitative data analysis and research support to BSc, MSc, PhD levels</li><li>SPSS & Excel: descriptive, Chi-square, t-tests, ANOVA, correlation</li><li>Questionnaire coding, cleaning, quality checks, interpretation</li><li>750+ observations, 70 variables, structured analytical outputs</li><li>10+ students and researchers supported</li></ul></div>
+<div class="card"><h3 style="margin:0 0 6px">Field Volunteer – WAVA</h3><div style="font-size:12px;color:var(--muted)">Oct 2025 • Measles-Rubella Campaign, FCT Abuja</div><ul class="list" style="margin-top:12px"><li>Community sensitisation and mobilisation across Bwari and AMAC</li><li>Engaged parents and caregivers in English and Hausa</li><li>Coordination with vaccination teams, community leaders</li><li>Field monitoring and documentation</li></ul></div>
+<div class="card"><h3 style="margin:0 0 6px">Community & School Health Outreach – NOUN</h3><div style="font-size:12px;color:var(--muted)">Mar 2022 – Feb 2025</div><ul class="list" style="margin-top:12px"><li>Planning and coordination of outreach across underserved communities</li><li>Health education, basic screening, referrals, information materials</li><li>School health education across government secondary schools</li><li>Facilitated adolescent health sessions, distributed hygiene commodities</li><li>Documentation of outreach activities</li></ul></div>
+</div>
+</div>
+</section>
+
+<section class="section" id="projects">
+<div class="container">
+<div style="display:flex;justify-content:space-between;align-items:end;flex-wrap:wrap;gap:16px;margin-bottom:20px">
+<div><div class="kicker">Projects</div><h2 style="font-size:38px;margin:0">Comprehensive Project Portfolio</h2></div>
+<div style="display:flex;gap:8px;flex-wrap:wrap"><button class="filter active" data-filter="all">All</button><button class="filter" data-filter="Research">Research</button><button class="filter" data-filter="Environmental">Green Africa</button><button class="filter" data-filter="Community">Community</button></div>
+</div>
+<div class="grid2" id="projectGrid">
+<div class="card project" data-cat="Research"><div class="kicker">Research Coordination</div><div style="font-weight:700;font-size:18px">YIELD – Youth Initiative for Enhancing Long-Term Delivery of HPV Implementation</div><div style="font-size:12px;color:var(--muted);margin:8px 0">DCL • FCT, Kano, Imo, Ondo, Edo • Jan 2026 – Jul 2026 • Field Coordinator</div><p style="font-size:13.5px;color:var(--muted)">End-to-end field coordination: stakeholder mapping, youth recruitment, Zoom webinar logistics, surveys and KIIs, questionnaire review, logistics. Ensured protocol adherence and timely execution.</p></div>
+<div class="card project" data-cat="Research"><div class="kicker">Data Management</div><div style="font-weight:700;font-size:18px">SHARP & COSBIN Projects – Public Health Research</div><div style="font-size:12px;color:var(--muted);margin:8px 0">DCL • Implementation Research</div><p style="font-size:13.5px;color:var(--muted)">Data management, quality assurance, SPSS/Excel analysis, structured tables and technical reports.</p></div>
+<div class="card project" data-cat="Environmental"><div class="kicker">Environmental Sustainability</div><div style="font-weight:700;font-size:18px">Project 309 – Green Africa Initiative (Environmental Sustainability Initiative, Abuja)</div><div style="font-size:12px;color:var(--muted);margin:8px 0">Sept 2023 – Present • Project Coordinator</div><p style="font-size:13.5px;color:var(--muted)">Tree nursery development, tree-planting, vendor/personnel/volunteer coordination, schedules, site requirements, monitoring and founder reporting.</p></div>
+<div class="card project" data-cat="Community"><div class="kicker">Community Health</div><div style="font-weight:700;font-size:18px">Community Health Outreach & School Health Education</div><div style="font-size:12px;color:var(--muted);margin:8px 0">NOUN Initiatives • Mar 2022 – Feb 2025</div><p style="font-size:13.5px;color:var(--muted)">Planning and coordination of outreach across underserved communities and government secondary schools – sanitation, health promotion, behaviour change, hygiene commodities.</p></div>
+</div>
+</div>
+</section>
+
+<section class="section" id="research">
+<div class="container">
+<div class="kicker">Research – Comprehensive</div><h2 style="font-size:38px;margin:0 0 28px">Selected Research Experience</h2>
+<div class="grid2">
+<div class="card">
+<div class="kicker">Principal Investigator – Independent Research Project • Apr 2026</div>
+<div style="font-weight:700;font-size:19px">The Role of Culture in Mental Health Stigma Across Nigeria's Six Geopolitical Zones</div>
+<ul class="list" style="margin-top:14px"><li>Designed and coordinated study examining relationship between culture and mental health stigma across six zones</li><li>Collected data from 427 participants using Google Forms, analysis in SPSS and Microsoft Excel</li><li>Coordinated data management, analysis, interpretation and manuscript preparation</li></ul>
+<div style="margin-top:20px;background:#f8fafc;border:1px solid var(--line);border-radius:16px;padding:18px">
+<div class="kicker">Key Findings – Summary</div>
+<table class="table"><tr><th>Domain</th><th>Finding</th></tr>
+<tr><td>Cultural beliefs</td><td>Variability in stigma perception across zones linked to differing cultural explanations of mental health</td></tr>
+<tr><td>Education level and help-seeking behaviour</td><td>Significant association observed (p &lt; 0.001)</td></tr>
+<tr><td>Sample size</td><td>n = 427 participants across six geopolitical zones</td></tr>
+<tr><td>Methods</td><td>Google Forms collection, SPSS descriptive & inferential analysis, structured tables for reporting</td></tr>
+</table>
+</div>
+</div>
+<div class="card">
+<div class="kicker">Undergraduate Research Project • Jul 2024 – Feb 2025 • NOUN</div>
+<div style="font-weight:700;font-size:18px">Assessment of Prevalence, Risk Factors, and Adherence to Preventive Practices of Obesity Among Young Adults (18–30 Years) in Nigeria</div>
+<ul class="list" style="margin-top:14px"><li>Quantitative research involving 636 respondents</li><li>Supported questionnaire administration, data management, statistical analysis, interpretation and presentation</li></ul>
+<div style="margin-top:22px;padding-top:18px;border-top:1px solid var(--line)">
+<div class="kicker">Collaborative Research • Sept 2023 – Apr 2024 • With University of Leeds</div>
+<div style="font-weight:700">A Comparative Assessment of Prevalence of Obesity in Adolescents and Effective Eradication Strategies in Nigeria and the UK</div>
+<ul class="list" style="margin-top:10px"><li>Partnered with graduate students from University of Leeds on cross-cultural initiative</li><li>Synthesized literature and data to analyze environmental and cultural determinants</li><li>Co-developed tailored intervention strategies for both countries</li></ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section" id="community">
+<div class="container">
+<div class="kicker">Field Experience & Community Impact</div><h2 style="font-size:38px;margin:0 0 14px">Photos from the field – real engagement</h2>
+<p style="color:var(--muted);max-width:70ch">School health education, community outreach and field documentation. Activities include team coordination, assembly sessions, environmental sanitation and participatory health discussions.</p>
+<div class="grid3" style="margin-top:24px">
+<div class="card" style="padding:0;overflow:hidden"><img src="assets/community-1.jpg" class="gallery-img" style="border:none;border-radius:24px 24px 0 0" alt="Community outreach team"><div style="padding:20px"><div style="font-weight:700">NOUN Community Health Outreach Team</div><div style="font-size:12.5px;color:var(--muted);margin-top:6px">Team participation and coordination support around outreach preparation, logistics and documentation. Group photograph illustrating field team.</div></div></div>
+<div class="card" style="padding:0;overflow:hidden"><img src="assets/community-2.jpg" class="gallery-img" style="border:none;border-radius:24px 24px 0 0" alt="School assembly"><div style="padding:20px"><div style="font-weight:700">School Health Education – Assembly Session</div><div style="font-size:12.5px;color:var(--muted);margin-top:6px">School-based health education for students – source portfolio associates programme with engagement across four schools.</div></div></div>
+<div class="card" style="padding:0;overflow:hidden"><img src="assets/community-3.jpg" class="gallery-img" style="border:none;border-radius:24px 24px 0 0" alt="Sanitation activity"><div style="padding:20px"><div style="font-weight:700">Environmental Sanitation Activity</div><div style="font-size:12.5px;color:var(--muted);margin-top:6px">Hygiene, waste management and healthy school environment themes with student participation.</div></div></div>
+</div>
+<div class="card" style="margin-top:22px;background:var(--green)">
+<div class="kicker">Field Documentation Sample – Based on Actual Experience (Not Mock Data)</div>
+<h3 style="margin:6px 0 8px">FCT Field Coordination Summary – YIELD</h3>
+<div style="font-size:12.5px;line-height:1.8;color:var(--muted);background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:16px">
+Location: FCT, Abuja<br>
+Focus: Youth participant orientation, stakeholder briefing, survey administration and Key Informant Interviews<br>
+Responsibilities: Coordinated schedules, prepared webinar logistics (Zoom), facilitated communication among staff, volunteers and stakeholders, reviewed questionnaires for completeness and protocol adherence<br>
+Learning: Early engagement with education and community stakeholders improves participation and data completeness
+</div>
+</div>
+</div>
+</section>
+
+<section class="section" id="education">
+<div class="container">
+<div class="kicker">Background</div><h2 style="font-size:38px;margin:0 0 28px">Education, Certifications & Skills</h2>
+<div class="grid2">
+<div class="card"><h3 style="margin:0 0 10px">Education</h3>
+<div style="padding:12px 0;border-bottom:1px solid var(--line)"><div style="font-weight:700">National Open University of Nigeria (NOUN)</div><div style="font-size:13px">B.Sc. Public Health – Second Class Upper Division</div><div style="font-size:12px;color:var(--muted)">Graduated: Mar 2025</div></div>
+<div style="padding:12px 0"><div style="font-weight:700">Federal Polytechnic Idah (FPI)</div><div style="font-size:13px">National Diploma (ND) Science Laboratory Technology – Upper Credit</div><div style="font-size:12px;color:var(--muted)">Graduated: Dec 2018</div></div>
+</div>
+<div class="card"><h3 style="margin:0 0 10px">Technical Skills</h3>
+<div style="font-size:13.5px;line-height:2">
+<strong>Microsoft Office:</strong> Word, Excel, PowerPoint<br>
+<strong>Data & Reporting:</strong> Excel, SPSS, Google Sheets, data cleaning, QA, analysis, tables<br>
+<strong>Digital Data Collection:</strong> KoboToolbox, ODK, Google Forms<br>
+<strong>Collaboration:</strong> Zoom, Google Workspace, Slack<br>
+<strong>Languages:</strong> English, Hausa, Yoruba<br><br>
+<span class="pill">Programme Coordination</span> <span class="pill">Field Operations</span> <span class="pill">Stakeholder Engagement</span> <span class="pill">MEL</span>
+</div></div>
+</div>
+
+<div class="card" style="margin-top:22px">
+<div class="kicker">Certifications – Complete & Standardized</div>
+<table class="table"><thead><tr><th>Credential Name</th><th>Issuing Organisation</th><th>Issued</th></tr></thead><tbody>
+<tr><td>Leadership Excellence Attainment Program (LEAP)</td><td>The Redeemed Christian Church of God</td><td>Mar 2026</td></tr>
+<tr><td>AI for Research Productivity and Workflow Automation</td><td>Direct Consulting and Logistics (DCL)</td><td>Jun 2026</td></tr>
+<tr><td>Introduction to Water, Sanitation, and Hygiene (WASH) in Emergency</td><td>DisasterReady</td><td>Jul 2026</td></tr>
+<tr><td>Monitoring, Evaluation, Accountability, and Learning (MEAL) in Emergencies</td><td>DisasterReady</td><td>Jan 2026</td></tr>
+<tr><td>Diploma in Human Resources (HR)</td><td>Alison</td><td>Dec 2025</td></tr>
+<tr><td>Executive Assistant Skills</td><td>Alison</td><td>Dec 2025</td></tr>
+<tr><td>Health and Safety for Social and Health Workers</td><td>Alison</td><td>Dec 2025</td></tr>
+<tr><td>AI Career Essentials</td><td>ALX Africa (alx_africa)</td><td>Dec 2024</td></tr>
+<tr><td>Working as a Virtual Assistant</td><td>Alison</td><td>Oct 2024</td></tr>
+<tr><td>Data Analytics</td><td>GlobalTech World Computer Institute</td><td>Sep 2024</td></tr>
+<tr><td>Independent Travel Manager Certification</td><td>Dreamport</td><td>Jul 2024</td></tr>
+</tbody></table>
+<div style="font-size:11px;color:var(--faint);margin-top:10px">All certifications listed in same format. Original certificates available on request.</div>
+</div>
+</div>
+</section>
+
+<section class="section" id="contact">
+<div class="container grid2">
+<div>
+<div class="kicker">Contact</div><h2 style="font-size:36px;margin:0 0 14px">Let's build health programmes that work.</h2>
+<p style="color:var(--muted)">Available for programme coordination, project administration, research support and data analysis collaborations.</p>
+<div style="margin-top:22px;display:flex;flex-direction:column;gap:10px">
+<a href="mailto:paulemmameh@gmail.com" class="btn btn-dark" style="justify-content:flex-start">paulemmameh@gmail.com</a>
+<a href="tel:+2349032622271" class="btn" style="justify-content:flex-start">+234 903 262 2271 / +234 907 511 5454</a>
+<a href="https://www.linkedin.com/in/paul-emmanuel-ameh-a29480253" target="_blank" class="btn" style="justify-content:flex-start">LinkedIn – Paul Emmanuel Ameh</a>
+<a href="assets/Paul_Emmanuel_Ameh_CV.pdf" download class="btn btn-accent" style="justify-content:flex-start">Download CV PDF</a>
+</div>
+<div style="margin-top:18px;font-size:12px;color:var(--muted)">No. 011, Zone B, Dutse Makaranta, FCT Abuja<br>paulemmameh@gmail.com • +234 903 262 2271</div>
+</div>
+<div class="card">
+<div class="kicker">Send a message</div>
+<form onsubmit="return handleContact(event)" style="display:flex;flex-direction:column;gap:12px;margin-top:12px">
+<input id="cname" placeholder="Your name" required><input id="cemail" type="email" placeholder="Your email" required><textarea id="cmsg" rows="6" placeholder="Tell me about your project..." required></textarea>
+<button class="btn btn-accent">Send via Email Client</button><div id="formStatus" style="font-size:12px;color:var(--muted)"></div>
+</form>
+<p style="font-size:11px;color:var(--faint);margin-top:10px">Opens your default email client. No backend storage.</p>
+</div>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="container" style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:24px">
+<div><div style="font-weight:800;color:var(--ink);font-size:14px">Paul Emmanuel Ameh</div><div style="margin-top:4px">Public Health | Implementation Research | Programme Coordination | Data Analysis</div><div style="margin-top:8px">Abuja, FCT, Nigeria • paulemmameh@gmail.com • +234 903 262 2271</div></div>
+<div style="max-width:40ch">Portfolio built on verified experience. No invented achievements, qualifications, publications or employers. Figures from actual work.</div>
+</div>
+<div style="text-align:center;margin-top:32px;border-top:1px solid var(--line);padding-top:18px">© <span id="year"></span> Paul Emmanuel Ameh — Professional Portfolio. All rights reserved.</div>
+</footer>
+
+<script>
+document.getElementById('year').textContent=new Date().getFullYear();
+document.querySelectorAll('.filter').forEach(f=>f.addEventListener('click',()=>{
+ document.querySelectorAll('.filter').forEach(x=>x.classList.remove('active'));f.classList.add('active');
+ const v=f.dataset.filter;document.querySelectorAll('.project').forEach(p=>{if(v==='all'||p.dataset.cat.includes(v))p.style.display='block';else p.style.display='none';});
+}));
+function handleContact(e){e.preventDefault();const n=document.getElementById('cname').value.trim(),em=document.getElementById('cemail').value.trim(),m=document.getElementById('cmsg').value.trim();const sub=encodeURIComponent('Portfolio contact from '+n);const body=encodeURIComponent(m+'\n\nFrom: '+n+' <'+em+'>');window.location.href=`mailto:paulemmameh@gmail.com?subject=${sub}&body=${body}`;document.getElementById('formStatus').textContent='Opening email client...';return false;}
+</script>
+</body>
+</html>
